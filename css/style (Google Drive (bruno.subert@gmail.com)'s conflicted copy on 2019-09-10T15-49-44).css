@@ -1,0 +1,40 @@
+body{
+  background: url("../img/clouds.png") no-repeat fixed center;
+  background-size: cover;
+  background-color: #32A2E2;
+}
+
+.container{
+  width: 50vh;
+  height: 70vh;
+  margin:15vh auto;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px 0px rgba(0,0,0,0.3);
+  background: url("../img/vectorblue.png") no-repeat fixed center;
+
+}
+
+.search{
+    margin: 2vh auto;
+    height: 5vh;
+
+}
+
+
+#search-button {
+  color: #eee;
+}
+
+#search-text {
+  font-family: 'Open Sans', sans-serif;
+  color: #222831;
+  height:3vh;
+  width: 30vh;
+  border-radius: 10px;
+  border-style:none;
+  outline:none;
+  padding-right:1px;
+  padding-left:1px;
+  text-align:center;
+
+}

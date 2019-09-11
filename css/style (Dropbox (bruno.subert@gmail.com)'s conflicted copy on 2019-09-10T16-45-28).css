@@ -1,0 +1,74 @@
+body{
+  background: #2980B9;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(-90deg, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(-90deg, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: 400% 400%;
+  animation: Gradient 30s ease infinite;
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.container{
+  width: 50vh;
+  height: 70vh;
+  margin:15vh auto;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px 0px rgba(0,0,0,0.3);
+  background-color: #6DD5FA;
+
+}
+
+.search{
+    margin: 2vh auto;
+    height: 5vh;
+
+}
+
+#search-button {
+  color: #eee;
+}
+
+#search-text {
+  font-family: 'Open Sans', sans-serif;
+  color: #222831;
+  height:3vh;
+  width: 30vh;
+  border-radius: 10px;
+  border-style:none;
+  outline:none;
+  padding-right:1px;
+  padding-left:1px;
+  text-align:center;
+
+}
+
+.city-icon{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  height: 100%;
+  margin-top: 2vh;
+}
+
+#icon {
+  width:15%;
+}
+
+.temperature, .humidity, .pressure {
+  margin-top: 5vh;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  box-shadow: 0 20px 40px 0px rgba(0,0,0,0.3);
+}

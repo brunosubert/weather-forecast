@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Forecast</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">  
+  <!--Favicon-->
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="images/favicon/apple-touch-icon.png">
+</head>
+<body>
+
+  <div class="container">
+    <header class="header">
+      <div class="search">
+        <input type="text" placeholder="Enter City Name" id="search-text">
+        <a id="search-button" href="#"><i class="fas fa-search"></i></a>
+      </div>
+    </header>
+
+    <main id="main">
+    
+      <div class="city-icon">
+        <div class="city-icon-holder">
+          <div id="city-name"></div>
+          <img src="" alt="" id="icon">
+        </div>
+      </div>
+    
+      <div class="temperature">
+        <div id="temp">
+          <p>Temperature</p>
+        </div>
+      </div>
+    
+      <div class="humidity">
+        <div id="humidity-div">
+          <p>Humidity</p>
+        </div>
+      </div>
+
+      <div class="pressure">
+        <div id="pressure-div">
+          <p>Pressure</p>
+        </div>
+      </div>
+
+    </main>
+  
+  </div>
+  <script src='https://use.fontawesome.com/releases/v5.0.13/js/all.js'></script>
+  <script type="text/javascript" src="js/index.js"></script>
+
+</body>
+</html>
+
+
+

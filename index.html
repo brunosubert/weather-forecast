@@ -6,56 +6,79 @@
   <title>Weather Forecast</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">  
+  <!-- Bootstrap -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">  
   <!--Favicon-->
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" href="images/favicon/apple-touch-icon.png">
+  <!--Script-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-
   <div class="container">
-    <header class="header">
-      <div class="search">
-        <input type="text" placeholder="Enter City Name" id="search-text">
-        <a id="search-button" href="#"><i class="fas fa-search"></i></a>
-      </div>
-    </header>
 
-    <main id="main">
-    
-      <div class="city-icon">
-        <div class="city-icon-holder">
-          <div id="city-name"></div>
-          <img src="" alt="" id="icon">
-        </div>
+    <div class="d-flex justify-content-center">
+      <div class="col-12 text-center">
+        <div class="search-container">
+          <div class="intro">
+            <h1>Welcome to the <br>Weather App</h1>
+          </div>
+          <div class="search">
+            <input type="text" placeholder="Enter City Name" id="search-text">
+            <a id="search-button" href="#"><i class="fas fa-search"></i></a>
+          </div>
+        </div>        
       </div>
-    
-      <div class="temperature">
-        <div id="temp">
+    </div>
+    <div class="second-section">
+   <div class="d-flex flex-column">
+      <div class="col text-center">
+          <div class="city-icon">
+            <div class="city-icon-holder">
+              <div id="city-name"></div>
+              <img src="" alt="" id="icon">
+              <div id="description"></div>
+            </div>
+          </div>
+        </div>
+    <div class="d-flex justify-content-center">
+      <div class="col text-center">
+        <div class="temperature">
           <p>Temperature</p>
+          <div id="temp">
+          </div>
         </div>
       </div>
-    
-      <div class="humidity">
-        <div id="humidity-div">
+      <div class="col text-center">
+        <div class="humidity">
           <p>Humidity</p>
-        </div>
+          <div id="humidity-div">
+          </div>
+        </div>       
       </div>
-
-      <div class="pressure">
-        <div id="pressure-div">
+      <div class="col text-center">
+        <div class="pressure">
           <p>Pressure</p>
-        </div>
+          <div id="pressure-div"> 
+          </div>
+        </div>        
       </div>
-
-    </main>
-  
+    </div>
+    </div>
   </div>
-  
+</div>
+   <footer class="footer">
+      <div class="footer-copyright text-center py-3">Made By
+    <a href="https://brunosubert.eu"> Bruno Šubert</a>
+  </div>
+    </footer>
   <script src='https://use.fontawesome.com/releases/v5.0.13/js/all.js'></script>
-  <script  src="js/index.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
 
 </body>
 </html>
