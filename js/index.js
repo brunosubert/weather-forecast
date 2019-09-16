@@ -1,4 +1,4 @@
-const appKey = "148637c95b86273420d2f663ede52528";
+const appKey = "DARKSKY API KEY";
 let temperature = document.getElementById("temp");
 let tempMax = document.getElementById("temp-max");
 let tempMin = document.getElementById("temp-min");
@@ -23,7 +23,7 @@ function weather() {
     latitude = position.coords.latitude;
     longitude = position.coords.longitude;
 
-    var url = "https://maps.googleapis.com/maps/api/geocode/json?latlng="+ latitude + "," + longitude + "&key=AIzaSyDD74MIayu2EbcfMan3SAeh8GFLd8qsfYg";
+    var url = "https://maps.googleapis.com/maps/api/geocode/json?latlng="+ latitude + "," + longitude + "&key=GECODE API KEY";
 
     $.getJSON(url, function(data) {
        var arr_address_comp = data.results[0].address_components;
@@ -63,7 +63,7 @@ function findWeatherDetails() {
   
   }else {
 
-    var url = "https://maps.googleapis.com/maps/api/geocode/json?address=" + input.value + "&key=AIzaSyDD74MIayu2EbcfMan3SAeh8GFLd8qsfYg";
+    var url = "https://maps.googleapis.com/maps/api/geocode/json?address=" + input.value + "&key=GECODE API KEY";
     console.log(url);
 
     $.getJSON(url, function(data) {
