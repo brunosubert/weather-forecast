@@ -1,9 +1,6 @@
 body{
-    background: url("../img/foggy.jpg");
-    background-size: cover;
-    background-position: fixed;
-    background-repeat: no-repeat;
-    font-family: "Raleway", sans-serif;
+    background: linear-gradient( 91.9deg, rgba(75,207,250,1) 6.3%, rgba(25,159,249,1) 98.9% );
+    font-family: "Quicksand", sans-serif;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -20,72 +17,136 @@ body{
 }
 
 
+
 .container{
-  width: 80vh;
-  height: 100vh;
-  border-radius: 20px;
-  margin-bottom: -7vh;
-}
-
-.intro{
-  margin: 5vh auto;
-}
-
-.search-container{
-  margin: 2vh auto;
-}
-
-#search-button {
-  color: #343d46;
-}
-
-#search-text {
-  height:4vh;
-  width: 30vh;
+  width: 700px;
+  height: 800px;
+  margin-bottom: -20px;
+  background-color: rgba(52, 61, 70, 0.6);
+  box-shadow: 0 20px 20px 0px rgba(0,0,0,0.3);
   border-radius: 5px;
-  border-style:none;
-  outline:none;
-  padding-right:1px;
-  padding-left:1px;
-  text-align:center;
+  margin: 20px auto;
+  color: #c0c5ce;
+  display: flex;
+  justify-content: center;
 }
 
-}
-.city-icon{
-  font-size: 40px;
-  font-weight: 400;
-  height: 100%;
+
+.main-section{
+  flex-direction: column;
 }
 
 #city-name{
-  margin-top: 2vh;
-  font-size: 40px;
+  margin-bottom: -5px;
+  padding-top: 10px;
+}
+
+
+.icon-desc{
+  display: flex;
+  flex-direction: column;
+}
+
+
+#icon {
+  height: 200px;
+  width: 200px;
+  filter: invert(91%) sepia(10%) saturate(189%) hue-rotate(180deg) brightness(86%) contrast(90%);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+#search-text {
+  height:30px;
+  width: 250px;
+  border-radius: 5px;
+  border-style:none;
+  outline:none;
+  text-align:center;
+  margin-top: 50px;
+}
+
+#city-name{
+  margin-top: 2px;
+  font-size: 50px;
   font-weight: 400;  
 }
 
 #description{
-  font-size: 20px;
-  font-weight: 400;  
-}
-#icon {
-  width:10%;
-}
-
-.temperature, .humidity, .pressure {
-  margin-top: 5vh;
   font-size: 30px;
-  margin-bottom: 5vh;
+  font-weight: 400; 
+  text-align:center;
 }
 
-.second-section{
-  background-color: rgba(52, 61, 70, 0.6);
-  box-shadow: 0 20px 20px 0px rgba(0,0,0,0.3);
-  border-radius: 5px;
-  margin: 5vh auto;
-  color: #c0c5ce;
+.temps{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
+
+#temp{
+  font-size: 150px;
+  font-weight: 300;
+}
+
+.temp-max-min{
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  font-weight: 300;
+  padding-left: 50px;
+  padding-top: 40px;
+}
+
+#temp-max{
+  margin-bottom: 2px;
+}
+
+#temp-min{
+  border-top: 2px solid #c0c5ce;
+}
+
+.forecast-days{
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  justify-content: center;  
+}
+
 
 .footer{
   color: #c0c5ce;  
+  background-color: rgba(52, 61, 70, 0.6);
+  box-shadow: 0 20px 20px 0px rgba(0,0,0,0.3);
+  margin-top: 95px;
 }
 
+a, a:hover, a:focus {
+  color: #c0c5ce; 
+}
+
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 350px;
+    height: auto;
+  }
+  .forecast-days{
+    margin-left: 125px;
+    flex-direction: column;
+    font-size: 40px;
+    justify-content: center;  
+  }
+  .icon-desc{
+  padding-left: 10px;
+  }
+  #icon{
+    height: 150px;
+    width: 150px;
+  }
+  #city-name{
+    font-size: 30px;
+  }
+}
